@@ -466,6 +466,7 @@ mark,
 }
 
 .blockquote-footer {
+  margin: 0 auto;
   display: block;
   font-size: 80%;
   color: #6c757d;
@@ -1289,8 +1290,7 @@ pre code {
   }
 
   .col-lg-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    margin: 0 auto;
   }
 
   .col-lg-5 {
@@ -4384,6 +4384,7 @@ input[type=button].btn-block {
 }
 
 .card-footer {
+  margin: 0 auto;
   padding: 1.25rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 0.125rem solid rgba(0, 0, 0, 0.125);
@@ -5512,7 +5513,7 @@ a.close.disabled {
   border-bottom-left-radius: 0.75rem;
 }
 .modal-footer > * {
-  margin: 0.25rem;
+  margin: 0 auto;
 }
 
 .modal-scrollbar-measure {
