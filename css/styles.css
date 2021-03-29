@@ -52,9 +52,25 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+figure {
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: transparent;
+  color: rgb(155, 155, 155);
+  font-style: italic;
+  size: 0.5rem;
+  padding: 2px;
+  text-align: center;
+}
+
+
+article, aside, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
@@ -159,9 +175,9 @@ sup {
 }
 
 a {
-  color: #af95b8;
+  color: #6b5987;
   text-decoration: none;
-  background-color: transparent;
+  background-color: transparent
 }
 a:hover {
   color: #956ed4;
@@ -213,8 +229,8 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #6c757d;
-  text-align: left;
+  color: #83888b;
+  text-align: center;
   caption-side: bottom;
 }
 
