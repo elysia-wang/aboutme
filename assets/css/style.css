@@ -44,7 +44,7 @@ h4 {
 }
 
 a {
-  color: #292929;
+  color: #ffffff;
   text-decoration: none !important;
   transition: all 0.5s ease-in-out 0s;
 }
@@ -148,6 +148,42 @@ p {
   padding-top: 140px;
 }
 
+.box {
+  /* width: 50%; */
+  padding: 20px;
+  margin: 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+#main {
+
+}
+
+#description {
+  
+}
+
+/* @media (min-width: 992px) {
+  .box {
+    width: 45%;
+  }
+} */
+
+@media (max-width: 991px) {
+  #description {
+    width: 100%;
+  }
+}
+
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -158,7 +194,7 @@ p {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #b8a07e;
+  background: #724C94;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -449,16 +485,47 @@ p {
 # Landing
 --------------------------------------------------------------*/
 #landing {
-  background: url("../img/home-bg.jpg") repeat scroll center center/cover;
+  background-color: #B8A1CC;
   height: 100vh;
   width: 100%;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B8A1CC;
+  /* Solid background color */
+}
+
+/* Circle container */
+#landing .circle {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 30px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  #landing-content {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+  }
 }
 
 #landing .landing-content {
   height: 100vh;
   text-align: left;
-  width: 100%;
+  width: 30%;
   display: flex;
+  padding-left: 40px;
   justify-content: center;
   flex-direction: column;
 }
@@ -556,15 +623,24 @@ p {
 /*  About
 /*-----------------------------------------------------------------------------------*/
 #about {
-  width: 100%;
+  width: 50%;
   height: auto;
-  background: #f7f7f7;
-  padding-top: 120px;
+  padding-right: 10px;
+  padding-left: 20px;
+  padding-top: 200px;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  #about {
+    width: 100%;
+    padding-bottom: 230px;
+  }
 }
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 20px solid #ffffff;
 }
 
 #about .div-img-bg .about-img img {
@@ -578,12 +654,15 @@ p {
 }
 
 #about .about-descr .p-heading {
-  font-family: "Playfair Display", serif;
+  color: #ffffff;
   font-size: 28px;
+  font-weight: 500;
   text-align: left;
 }
 
 #about .about-descr .separator {
+  color: #ffffff;
+  font-size: 18px;
   max-width: 80%;
   margin-bottom: 0;
   text-align: left;
